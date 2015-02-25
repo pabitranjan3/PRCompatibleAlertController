@@ -14,6 +14,7 @@
 		1CB9450D1A9E8C68002DD9DB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CB9450C1A9E8C68002DD9DB /* Images.xcassets */; };
 		1CB945101A9E8C68002DD9DB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CB9450E1A9E8C68002DD9DB /* LaunchScreen.xib */; };
 		1CB9451C1A9E8C69002DD9DB /* PRCompatibleAlertControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CB9451B1A9E8C69002DD9DB /* PRCompatibleAlertControllerTests.m */; };
+		1CB945281A9E90ED002DD9DB /* CompatibleAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CB945271A9E90ED002DD9DB /* CompatibleAlertController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		1CB945151A9E8C69002DD9DB /* PRCompatibleAlertControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PRCompatibleAlertControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CB9451A1A9E8C69002DD9DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1CB9451B1A9E8C69002DD9DB /* PRCompatibleAlertControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PRCompatibleAlertControllerTests.m; sourceTree = "<group>"; };
+		1CB945261A9E90EC002DD9DB /* CompatibleAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompatibleAlertController.h; sourceTree = "<group>"; };
+		1CB945271A9E90ED002DD9DB /* CompatibleAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompatibleAlertController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,7 @@
 		1CB944FE1A9E8C68002DD9DB /* PRCompatibleAlertController */ = {
 			isa = PBXGroup;
 			children = (
+				1CB945251A9E90C8002DD9DB /* CompatibleAlertController */,
 				1CB945031A9E8C68002DD9DB /* AppDelegate.h */,
 				1CB945041A9E8C68002DD9DB /* AppDelegate.m */,
 				1CB945061A9E8C68002DD9DB /* ViewController.h */,
@@ -117,6 +121,15 @@
 				1CB9451A1A9E8C69002DD9DB /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1CB945251A9E90C8002DD9DB /* CompatibleAlertController */ = {
+			isa = PBXGroup;
+			children = (
+				1CB945261A9E90EC002DD9DB /* CompatibleAlertController.h */,
+				1CB945271A9E90ED002DD9DB /* CompatibleAlertController.m */,
+			);
+			path = CompatibleAlertController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +234,7 @@
 			files = (
 				1CB945081A9E8C68002DD9DB /* ViewController.m in Sources */,
 				1CB945051A9E8C68002DD9DB /* AppDelegate.m in Sources */,
+				1CB945281A9E90ED002DD9DB /* CompatibleAlertController.m in Sources */,
 				1CB945021A9E8C68002DD9DB /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
