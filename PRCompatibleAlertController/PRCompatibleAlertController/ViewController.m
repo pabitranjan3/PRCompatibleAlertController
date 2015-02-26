@@ -31,12 +31,12 @@
 
 -(IBAction)showAlert:(UIButton*)sender
 {
-    compatibleAlertController =[[CompatibleAlertController alloc]initWithTitle:@"Title" message:@"Message" preferredStyle:CompatibleAlertControllerStyleAlert];
+    compatibleAlertController = [CompatibleAlertController compatibleAlertControllerWithTitle:@"TITLE" message:@"Message" preferedStyle:CompatibleAlertControllerStyleAlert];
     
-    CompatibleAlertAction *destructiveAction = [[CompatibleAlertAction alloc] initWithTitle:@"Destroy" style:CompatibleAlertActionStyleDestructive handler:^(CompatibleAlertAction *action) {
+    CompatibleAlertAction *destructiveAction = [CompatibleAlertAction compatibleActionWithTitle:@"DESTROY" style:CompatibleAlertActionStyleDestructive handler:^(CompatibleAlertAction *action) {
         NSLog(@"Destroy ....");
     }];
-    
+
     [compatibleAlertController addAction:destructiveAction];
     
     [compatibleAlertController presentCompatibleAlertController:self animated:YES completion:NULL];
