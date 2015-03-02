@@ -24,11 +24,10 @@
                                     style:(CompatibleAlertActionStyle)style
                                   handler:(void (^)(CompatibleAlertAction *action))handler;
 {
-    CompatibleAlertAction *compatibleAction = [[CompatibleAlertAction alloc] initWithTitle:title
-                                                                                     style:style
-                                                                                   handler:^(CompatibleAlertAction *action) {
-                                                                                   }];
-    return compatibleAction;
+    return [[self alloc] initWithTitle:title
+                                 style:style
+                               handler:handler];
+    
 }
 - (instancetype)initWithTitle:(NSString *)title
                         style:(CompatibleAlertActionStyle)style
@@ -66,10 +65,10 @@
                                            message:(NSString *)message
                                      preferedStyle:(CompatibleAlertControllerStyle)preferedStyle
 {
-    CompatibleAlertController *compatibleController = [[CompatibleAlertController alloc] initWithTitle:title
-                                                                                               message:message
-                                                                                        preferredStyle:preferedStyle];
-    return compatibleController;
+    return [[self alloc] initWithTitle:title
+                               message:message
+                        preferredStyle:preferedStyle];
+    
 }
 - (instancetype)initWithTitle:(NSString *)title
                       message:(NSString *)message
