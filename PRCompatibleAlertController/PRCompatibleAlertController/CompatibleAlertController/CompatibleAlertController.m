@@ -113,6 +113,15 @@
     }
 }
 
+- (void)dismissViewControllerAnimated:(BOOL)flag
+                           completion:(void (^)(void))completion{
+
+    [self dismissViewControllerAnimated:flag completion:completion]
+    
+
+}
+
+
 - (void)addAction:(CompatibleAlertAction *)action{
     [self.actions addObject:action];
 }

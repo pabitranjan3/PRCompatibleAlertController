@@ -48,6 +48,9 @@ typedef void (^CompatibleAlertActionHandler)(CompatibleAlertAction*);
 @property (nonatomic, copy) NSString *title;
 @property (nonatomic, copy) NSString *message;
 
+- (void)dismissViewControllerAnimated:(BOOL)flag
+                           completion:(void (^)(void))completion;
+
 - (void)addAction:(CompatibleAlertAction *)action;
 @property (nonatomic, readonly) NSMutableArray *actions;
 
